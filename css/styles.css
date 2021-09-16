@@ -1,14 +1,31 @@
+/* Viewports between 320px and 480px wide */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .card {
+      
+    }
+  }
+
 html {
     margin: 0px;
 }
 
 body {
-    margin: 15px;
+    margin: 0px;
     background-color: black;
     color: #cccccc;
 }
 
-h1 {
-    margin: auto;
-    font-weight: normal;
-}
+.container.main {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+.iframe {
+    position: absolute;
+    padding: 0;
+    margin: 0;    
+    width: 100%;
+    height: 100%;
+  }
