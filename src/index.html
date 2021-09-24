@@ -15,19 +15,19 @@
         </header>
         <container
           data-name="container-content"
-          class="flex flex-grow-1 flex-row-l tc flex-column z-0"
+          class="container flex flex-grow-1 flex-row-l tc flex-column"
         >
-          <section data-name="column1" class="column">
-            <p class="tl fw2 f2 w-100-m w-100-s tc pl3-l pb2-l ma0">Blog</p>
-          </section>
-          <section data-name="column2" class="column">
-            <p class="tl fw2 f2 w-100-m w-100-s tc pl3-l pb2-l ma0">Two</p>
-          </section>
-          <section data-name="column3" class="column">
-            <p class="tl fw2 f2 w-100-m w-100-s tc pl3-l pb2-l ma0">Three</p>
-          </section>
+          <div data-name="column1" class="column bg-red"></div>
+          <div data-name="column2" class="column bg-green"></div>
+          <div data-name="column3" class="column bg-blue"></div>
         </container>
       </container>
+      <script>
+        $(".column").click(function () {
+          $(this).removeClass("bg-red");
+          $(this).addClass("bg-yellow");
+        });
+      </script>
       <script src="./index.js"></script>
       <!-- load javascript-->
     </body>
