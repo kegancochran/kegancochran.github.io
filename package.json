@@ -5,8 +5,6 @@
   "dependencies": {
     "@fontsource/inter": "^4.5.0",
     "animate.css": "^4.1.1",
-    "css": "^3.0.0",
-    "src": "^1.1.2",
     "tachyons": "^4.12.0",
     "tachyons-animate": "^7.0.1-1"
   },
