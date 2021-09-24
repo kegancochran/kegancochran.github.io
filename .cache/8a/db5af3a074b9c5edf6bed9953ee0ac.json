@@ -1,1 +1,22 @@
-{"id":"node_modules/@fontsource/inter/files/inter-greek-400-normal.woff2","dependencies":[{"name":"/Users/kegan/Documents/GitHub/kegancochran.github.io/package.json","includedInParent":true,"mtime":1632492681427},{"name":"/Users/kegan/Documents/GitHub/kegancochran.github.io/node_modules/@fontsource/inter/package.json","includedInParent":true,"mtime":1632491297921}],"generated":{"js":"module.exports=\"/4c8f9f9267565f25acb15d196c4caf82.woff2\";"},"sourceMaps":null,"error":null,"hash":"63b613fa349b1c36be0992d89bae4836","cacheData":{"env":{}}}
+{
+  "id": "../node_modules/@fontsource/inter/files/inter-greek-400-normal.woff2",
+  "dependencies": [
+    {
+      "name": "/Users/kegan/Documents/GitHub/kegancochran.github.io/package.json",
+      "includedInParent": true,
+      "mtime": 1632497706570
+    },
+    {
+      "name": "/Users/kegan/Documents/GitHub/kegancochran.github.io/node_modules/@fontsource/inter/package.json",
+      "includedInParent": true,
+      "mtime": 1632496764988
+    }
+  ],
+  "generated": {
+    "js": "module.exports=\"/6b13b38f2bf33250b2fe3126da093f94.woff2\";"
+  },
+  "sourceMaps": null,
+  "error": null,
+  "hash": "63b613fa349b1c36be0992d89bae4836",
+  "cacheData": { "env": {} }
+}

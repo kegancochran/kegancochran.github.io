@@ -1,0 +1,8 @@
+.column {
+  flex-grow: 20;
+  transition: all 1s;
+}
+
+.collapse {
+  flex-grow: 1;
+}
