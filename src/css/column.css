@@ -1,8 +1,9 @@
-.column {
+.fill {
   flex-grow: 20;
-  transition: all 1s;
+  transition: all 0.5s;
 }
 
 .collapse {
   flex-grow: 1;
+  background: inherit;
 }

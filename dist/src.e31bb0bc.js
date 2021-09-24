@@ -327,6 +327,35 @@ parcelRequire = (function (modules, cache, entry, globalName) {
           "../node_modules/parcel-bundler/src/builtins/css-loader.js",
       },
     ],
+    "css/inter.css": [
+      function (require, module, exports) {
+        var reloadCSS = require("_css_loader");
+
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      },
+      {
+        _css_loader:
+          "../node_modules/parcel-bundler/src/builtins/css-loader.js",
+      },
+    ],
+    "js/color.js": [
+      function (require, module, exports) {
+        $(".column").click(function () {
+          $(this).toggleClass("fill");
+        });
+        $("#column-red").click(function () {
+          $("#column-red").addClass("bg-dark-red");
+        });
+        $("#column-blue").click(function () {
+          $("#column-blue").addClass("bg-dark-blue");
+        });
+        $("#column-green").click(function () {
+          $("#column-green").addClass("bg-dark-green");
+        });
+      },
+      {},
+    ],
     "index.js": [
       function (require, module, exports) {
         "use strict";
@@ -341,14 +370,9 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
         require("./css/column.css");
 
-        $(".column").click(function () {
-          $(this).removeClass("collapse");
-          $(".column")
-            .not(this)
-            .each(function () {
-              $(this).addClass("collapse");
-            });
-        });
+        require("./css/inter.css");
+
+        require("./js/color.js");
       },
       {
         "@fontsource/inter": "../node_modules/@fontsource/inter/index.css",
@@ -357,6 +381,8 @@ parcelRequire = (function (modules, cache, entry, globalName) {
           "../node_modules/tachyons-animate/src/tachyons-animate.css",
         "animate.css": "../node_modules/animate.css/animate.css",
         "./css/column.css": "css/column.css",
+        "./css/inter.css": "css/inter.css",
+        "./js/color.js": "js/color.js",
       },
     ],
     "../node_modules/parcel-bundler/src/builtins/hmr-runtime.js": [
@@ -392,7 +418,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
           var hostname = "" || location.hostname;
           var protocol = location.protocol === "https:" ? "wss" : "ws";
           var ws = new WebSocket(
-            protocol + "://" + hostname + ":" + "57983" + "/"
+            protocol + "://" + hostname + ":" + "59302" + "/"
           );
 
           ws.onmessage = function (event) {

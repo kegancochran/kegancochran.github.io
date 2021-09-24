@@ -1,1 +1,22 @@
-{"id":"P733","dependencies":[{"name":"/Users/kegan/Documents/GitHub/kegancochran.github.io/package.json","includedInParent":true,"mtime":1632492070638},{"name":"/Users/kegan/Documents/GitHub/kegancochran.github.io/node_modules/@fontsource/inter/package.json","includedInParent":true,"mtime":1632491297921}],"generated":{"js":"module.exports=\"/3fbdf707a39bca42fbcf8e5ebec8e0a3.woff2\";"},"sourceMaps":null,"error":null,"hash":"bfdbdb54a6e5e2d6b30edeece80b94c7","cacheData":{"env":{}}}
+{
+  "id": "ACcE",
+  "dependencies": [
+    {
+      "name": "/Users/kegan/Documents/GitHub/kegancochran.github.io/package.json",
+      "includedInParent": true,
+      "mtime": 1632515466469
+    },
+    {
+      "name": "/Users/kegan/Documents/GitHub/kegancochran.github.io/node_modules/@fontsource/inter/package.json",
+      "includedInParent": true,
+      "mtime": 1632496764988
+    }
+  ],
+  "generated": {
+    "js": "module.exports=\"/002704b1afbec24d1637b7e2a691419f.woff2\";"
+  },
+  "sourceMaps": null,
+  "error": null,
+  "hash": "bfdbdb54a6e5e2d6b30edeece80b94c7",
+  "cacheData": { "env": {} }
+}
