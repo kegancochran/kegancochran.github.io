@@ -342,10 +342,16 @@ parcelRequire = (function (modules, cache, entry, globalName) {
     "js/color.js": [
       function (require, module, exports) {
         $(".column").click(function () {
+          $(".column").not(this).removeClass("fill");
           $(this).toggleClass("fill");
+          $(".column").not(this).addClass("collapse");
+        });
+        $("header").click(function () {
+          $(this).toggleClass("bg-yellow");
+          $(this).toggleClass("near-black");
         });
         $("#column-red").click(function () {
-          $("#column-red").addClass("bg-dark-red");
+          $("#column-red").toggleClass("bg-dark-red");
         });
         $("#column-blue").click(function () {
           $("#column-blue").addClass("bg-dark-blue");
@@ -418,7 +424,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
           var hostname = "" || location.hostname;
           var protocol = location.protocol === "https:" ? "wss" : "ws";
           var ws = new WebSocket(
-            protocol + "://" + hostname + ":" + "59302" + "/"
+            protocol + "://" + hostname + ":" + "60443" + "/"
           );
 
           ws.onmessage = function (event) {
