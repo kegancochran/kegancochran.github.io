@@ -3,11 +3,11 @@
 !/.yarn/plugins
 !/.yarn/releases
 !/.yarn/sdks
-/.cache/
-/node_modules/
-/.husky
-/.parcel-cache/
-/dist/
+.cache/
+node_modules/
+.husky
+.parcel-cache/
+dist/
 
 # Swap the comments on the following lines if you don't wish to use zero-installs
 # Documentation here: https://yarnpkg.com/features/zero-installs
