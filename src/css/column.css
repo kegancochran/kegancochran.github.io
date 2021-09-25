@@ -1,8 +1,11 @@
 .fill {
   flex-grow: 20;
-  transition: all 0.5s;
 }
 
-.collapse {
-  background: inherit;
+a {
+  transition: all 0.7s ease
+}
+
+#header:hover a{
+  color: #111111;
 }
