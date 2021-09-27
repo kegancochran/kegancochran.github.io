@@ -1,1 +1,0 @@
-# kegancochran.github.io
