@@ -12,11 +12,11 @@ $("#column-green").click(function () {
 
 $("#header").click(function () {
   $(this).toggleClass("bg-yellow");
-  if ( $('a').hasClass('near-white') ) {
-    $('a').toggleClass('near-white');
-    $('a').addClass('near-black');
+  if ( $('#a').hasClass('near-white') ) {
+    $('#a').toggleClass('near-white');
+    $('#a').addClass('near-black');
   }
-  else ( $('a').toggleClass('near-black') )
+  else ( $('#a').toggleClass('near-black') )
 });
 
 $(".click-fill").click(function () {
@@ -28,8 +28,8 @@ $(".click-fill").click(function () {
 });
 
 $(".click-fill").not('#header').click(function () {
-  if ( $('a').hasClass('near-black') ) {
-    $('a').toggleClass('near-black');
-    $('a').toggleClass('near-white');
+  if ( $('#a').hasClass('near-black') ) {
+    $('#a').toggleClass('near-black');
+    $('#a').toggleClass('near-white');
     }
 });
