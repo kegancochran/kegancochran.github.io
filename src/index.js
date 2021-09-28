@@ -5,3 +5,4 @@ import "animate.css";
 import "./css/column.css";
 import "./css/inter.css";
 import "./js/color.js";
+import "./js/nav.js";

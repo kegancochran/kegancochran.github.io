@@ -1,3 +1,7 @@
+var jquery = require("jquery");
+window.$ = window.jQuery = jquery; // notice the definition of global variables here
+require("jquery-ui-dist/jquery-ui.js");
+
 $("#column-red").click(function () {
   $("#column-red").toggleClass("bg-dark-red");
 });
