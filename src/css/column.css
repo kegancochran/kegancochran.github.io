@@ -5,7 +5,3 @@
 a {
   transition: all 0.7s ease
 }
-
-#header:hover #a{
-  color: #111111;
-}

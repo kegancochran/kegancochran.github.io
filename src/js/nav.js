@@ -1,6 +1,5 @@
-import React from "react"
+import React from "react";
 import ReactDOM from "react-dom";
-import 'tachyons';
 
 ReactDOM.render(
     <div class='fixed top-2 z-1 bg-near-white near-black pa3 br--right br4 animated shadow-3'>
