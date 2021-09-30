@@ -1,0 +1,21 @@
+@import url('https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css');
+@import '../font/Inter Web/inter.css';
+
+html, body {
+    font-family: "Inter";
+    background-color: #111111;
+    color: #dddddd
+}
+
+a {
+    text-decoration: none;
+    color: #dddddd
+}
+
+a:active {
+    color: white;
+}
+
+.current-link {
+    font-weight: bold;
+}

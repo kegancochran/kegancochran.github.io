@@ -1,0 +1,1 @@
+document.querySelectorAll('a[href="'+document.URL+'"]').forEach(function(elem){e‌​lem.className += ' current-link')});
