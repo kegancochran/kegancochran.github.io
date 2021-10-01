@@ -1,13 +1,120 @@
-<!DOCTYPE html>
-<html lang="en">
-  <title> </title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
-  <link rel="stylesheet" href="font/Inter Web/inter.css">
-  <link rel="stylesheet" href="css/style.css">
-  <body class="bg-near-black light-grey">
+<html>
+  <!DOCTYPE html>
+  <html lang="en">
+    <title>columns</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css">
+    <body class="bg-near-black relative near-white inter">
+      <div class="card flex flex-row fixed top-2 z-1 bg-near-white near-black br--right br2 measure-narrow shadow-3">
+        <section class="mr2 pa3">
+          <h3 class="mt0">Expanding Columns</h3>
+          <p class="">As I was thinking of potential website layouts, something
+             like this popped into my head—three columns (rows on mobile) and a navbar that expand on click, 
+            populating with content. I didn't really know what I was getting myself into, 
+            I just wanted to see if I could make it.
+          </p>
+          <p>
+            Once it was all said and done, I tested it on mobile and BOY was the performance terrible. 
+            So it lives here now for your enjoyment (if your device can smoothly animate it lol).
+          </p>
+          <a href="snippets.html" class="back fw5 near-black"><- back</a>
+        </section>
+        <a class="ma0 pa0 fw5 near-black tc bl ph1 cardToggle" href="#">OPEN/CLOSE MENU</a>
 
+      </div>
+      <container class="flex flex-column vh-100 relative z-0">
+        <header
+          id="header"
+          class="
+            animated slideInDown
+            tc
+            click-fill
+            w-100
+            bb
+            b--white-10
+            hover-bg-yellow
+            z-10
+            shadow-hover
+            hide-child
+          "
+          
+        >
+          <a
+            id="a"
+            class="near-white no-underline tracked small-caps mb0 f5 fw5"
+          >
+            menu bar thing
+          </a>
 
-  </body>
+        </header>
+        <container
+          data-name="container-content"
+          class="flex flex-grow-1 flex-row-l tc flex-column z-0"
+        >
+          <section
+            id="column-red"
+            class="
+              column
+              click-fill
+              animated
+              fadeIn
+              d2
+              flex flex-grow-1
+              items-end-l items-center
+              pointer
+              hover-bg-dark-red
+              b--white-10
+              br-l
+              bb-m bb-s
+              shadow-hover
+            "
+          >
+            <p class="tl fw2 f2 w-100-m w-100-s tc pl3-l pb2-l ma0">One</p>
+          </section>
+          <section
+            id="column-green"
+            class="
+              column
+              click-fill
+              animated
+              fadeIn
+              d4
+              flex
+              items-end-l items-center
+              flex-grow-1
+              pointer
+              hover-bg-dark-green
+              b--white-10
+              br-l
+              bb-m bb-s
+              shadow-hover
+            "
+          >
+            <p class="tl fw2 f2 w-100-m w-100-s tc pl3-l pb2-l ma0">Two</p>
+          </section>
+          <section
+            id="column-blue"
+            class="
+              animated
+              fadeIn
+              d6
+              column
+              click-fill
+              flex
+              items-end-l items-center
+              flex-grow-1
+              pointer
+              hover-bg-dark-blue
+              shadow-hover
+            "
+          >
+            <p class="tl fw2 f2 w-100-m w-100-s tc pl3-l pb2-l ma0">Three</p>
+          </section>
+        </container>
+      </container>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="js/columns.js"></script>
+      <!-- load javascript-->
+    </body>
+  </html>
 </html>
-

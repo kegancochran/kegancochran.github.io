@@ -1,10 +1,18 @@
-@import url('https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css');
 @import '../font/Inter Web/inter.css';
+@import url('https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
 
-html, body {
-    font-family: "Inter";
+/* ------ hide scrollbar ------ */
+body::-webkit-scrollbar { width: 0 !important }
+body { overflow: -moz-scrollbars-none; }
+body { -ms-overflow-style: none; }
+/* ----------------------------- */
+    
+body {
+    font-family: "Inter", sans-serif;
     background-color: #111111;
-    color: #dddddd
+    color: #dddddd;
+    animation: fadeIn .25s;
 }
 
 a {
@@ -16,6 +24,53 @@ a:active {
     color: white;
 }
 
-.current-link {
-    font-weight: bold;
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
+
+/* --------------- BUTTONS ------------- */
+.back:hover {
+    animation-duration: .5s;
+    animation-name: backButton;
+    }
+  
+@keyframes backButton {
+    from {
+        margin-left: 0%;
+    }
+
+    50% {
+        margin-left: -3%;
+    }
+
+    to {
+        margin-left: 0%;
+    }
+}
+
+.card {
+    transition: transform .5s;
+}
+
+.card.toggled {
+    transform: translate(-92%);
+}
+
+.cardToggle {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+
+/* --------------- COLUMNS ------------- */
+.fill {
+    flex-grow: 20;
+  }
+  
+  a {
+    transition: all 0.7s ease
+  }
+  
+  #header:hover #a{
+    color: #111111;
+  }
